@@ -1,0 +1,9 @@
+{
+    "project_name": "projectx",
+    "docker_base": ["alpine:latest", "debian:jessie"],
+    "maintainer_name": "Sven",
+    "maintainer_mail": "sven@so36.net",
+    "short_description": "A short description which will be used in the README",
+    "repo_group": "svx",
+    "repo_name": "{{cookiecutter.project_name}}"
+}
