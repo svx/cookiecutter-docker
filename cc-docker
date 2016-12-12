@@ -1,0 +1,43 @@
+#!/bin/bash
+set -e
+
+# Colors
+ESC_SEQ="\x1b["
+COL_RESET=$ESC_SEQ"39;49;00m"
+COL_RED=$ESC_SEQ"31;01m"
+#COL_GREEN=$ESC_SEQ"32;01m"
+COL_YELLOW=$ESC_SEQ"33;01m"
+COL_BLUE=$ESC_SEQ"34;01m"
+#COL_MAGENTA=$ESC_SEQ"35;01m"
+#COL_CYAN=$ESC_SEQ"36;01m"
+
+## Functions we use
+# Error
+error_exit() {
+    echo -en "$COL_RED$1$COL_RESET" 1>&2
+    exit 1
+}
+
+
+cookiecutter_cmd() {
+    echo -en "$COL_YELLOW Please answer the questions or use default settings by pressing enter:$COL_RESET\n"
+    docker run -it -v $PWD:/srv/app \
+    -v ~/.cookiecutters:/.cookiecutters \
+    -v ~/.cookiecutter_replay:/.cookiecutter_replay \
+    -u "$(id -u)":"$(id -g)" cc https://github.com/svx/cookiecutter-docker.git
+}
+
+help_msg() {
+    echo -en "$COL_BLUE cc-docker$COL_RESET\n"
+    echo -en "$COL_BLUE cookiecutter for docker based projects$COL_RESET\n"
+    echo -en "$COL_YELLOW https://github.com/svx/cookiecutter-docker$COL_RESET\n"
+    echo -en "$COL_YELLOW running with https://github.com/testthedocs/ttd.cookiecutter$COL_RESET\n"
+}
+
+if [ "$1" == "-h" ] ; then
+    help_msg
+    exit 0
+fi
+
+cookiecutter_cmd
+
