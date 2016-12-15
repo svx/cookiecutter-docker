@@ -20,6 +20,8 @@ ADD
 
 EXPOSE
 
+
+# Make sure to check if tini [https://github.com/krallin/tini] could be useful
 ENTRYPOINT
 
 CMD
