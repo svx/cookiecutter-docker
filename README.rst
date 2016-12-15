@@ -17,7 +17,7 @@ Examples
 
 .. raw:: html
 
-	<script type="text/javascript" src="https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2.js" id="asciicast-8e4bhblj5xcpqqtzn80qn7er2" async></script>
+	<a href="https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2" target="_blank"><img src="https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2.png" width="835"></a>
 
 
 Usage
