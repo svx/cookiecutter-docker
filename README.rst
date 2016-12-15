@@ -19,6 +19,9 @@ Examples
 
 	<a href="https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2" target="_blank"><img src="https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2.png" width="835"></a>
 
+.. raw:: html
+
+	<a href="https://asciinema.org/a/14"><img src="https://asciinema.org/a/14.png" width="836"/></a>
 
 Usage
 -----
