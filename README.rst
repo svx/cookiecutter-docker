@@ -12,16 +12,15 @@ Features
 - Setup of custom *Makefile* for building, taging and pushing images [currently `docker-hub <https://hub.docker.com/>`_ and `Quay <https://quay.io/>`_].
 
 
-Examples
---------
+Example
+-------
 
-.. raw:: html
+See how it works:
 
-	<a href="https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2" target="_blank"><img src="https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2.png" width="835"></a>
 
-.. raw:: html
+.. image:: https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2.png
+   :target: https://asciinema.org/a/8e4bhblj5xcpqqtzn80qn7er2
 
-	<a href="https://asciinema.org/a/14"><img src="https://asciinema.org/a/14.png" width="836"/></a>
 
 Usage
 -----
