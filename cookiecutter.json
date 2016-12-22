@@ -1,6 +1,6 @@
 {
     "project_name": "projectx",
-    "docker_base": ["alpine:latest", "debian:jessie"],
+    "docker_base": ["alpine", "debian"],
     "maintainer_name": "Sven",
     "maintainer_mail": "sven@so36.net",
     "short_description": "A short description which will be used in the README",
